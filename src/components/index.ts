@@ -1,0 +1,14 @@
+export { default as Hero } from "./Hero";
+export { default as Navbar } from "./reusable/Navbar";
+export { default as Button } from "./reusable/Button";
+export { default as Products } from "./Products";
+export { default as AboutUs } from "./AboutUs";
+export { default as SliderImgs } from "./SliderImgs";
+export { default as Partners } from "./Partners";
+export { default as LaunchSale } from "./LaunchSale";
+export { default as Footer } from "./reusable/Footer";
+export { default as ProductInfo } from "./ProductInfo";
+export { default as Reaviews } from "./reusable/Reviews";
+export { default as ProductsCart } from "./ProductsCart";
+export { default as AllProducts } from "./AllProducts";
+export { default as OfCheckout } from "./OfCheckout";

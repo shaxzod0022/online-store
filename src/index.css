@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0 auto;
+}
+button,
+a {
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero-gradient {
+  background: linear-gradient(90deg, #008475 0%, #f46036 100%);
+}
+
+.object-contain {
+  transform: scale(1.2);
+}
+
+.hero-title {
+  background-image: url("./assets/Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(150px);
+}
+
+.position-left-right {
+  transform: translate(-50%, -50%);
+}
+
+.box-shadow {
+  box-shadow: 0px 16px 32px -4px #919eab3d;
+  /* box-shadow: 0px 0px 4px 0px #919eab3d; */
+}
+
+.scrooll {
+  overflow-y: scroll;
+  height: 100px;
+}
+
+/* Slider container */
+.slider-container {
+  width: 100%; /* Slayder kengligi butun sahifa */
+  overflow-x: scroll; /* Chapga va o'ngga skroll qilish uchun */
+  scroll-snap-type: x mandatory; /* Scrollni muayyan nuqtalarda to'xtatish */
+  display: flex;
+  justify-content: center;
+}
+
+.corusel {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 16px;
+  overflow-y: hidden;
+}
+
+/* Scroll bar uchun kenglik (faqat Webkit brauzerlar: Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Scroll bar orqa fon (kanali) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Scroll bar qo'li */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+.corusel::-webkit-scrollbar-thumb {
+  border: 5px solid #f1f1f1;
+}
+
+/* Scroll bar ustiga hover qilganda rangi o'zgaradi */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.bg-style {
+  background: linear-gradient(to bottom, white 50%, #008475 50%);
+}
+
+.leftTrans {
+  transform: translate(-50%);
+}
+
+.box-shadow-navbar {
+  box-shadow: 0px 6px 24px 0px #bababa33;
 }
